@@ -15,10 +15,10 @@
         class="brand"
         aria-label="Habitica"
       >
-        <div
+        <img
           class="logo svg-icon d-none d-xl-block"
-          v-html="icons.logo"
-        ></div>
+          v-bind:src="icons.logo"
+        >
         <div class="svg-icon gryphon d-xs-block d-xl-none"></div>
       </b-navbar-brand>
       <b-navbar-toggle
@@ -421,7 +421,7 @@ body.modal-open #habitica-menu {
     }
 
     .gryphon {
-      background-image: url('~@/assets/images/melior@3x.png');
+      background-image: url('~@/assets/svg/uvp.png');
       width: 30px;
       height: 30px;
       background-size: cover;
@@ -569,8 +569,7 @@ body.modal-open #habitica-menu {
 
   .logo {
     padding-left: 10px;
-    width: 128px;
-    height: 28px;
+    width: 60%;
   }
 
   .quick-menu {
@@ -741,7 +740,7 @@ import goldIcon from '@/assets/svg/gold.svg';
 import syncIcon from '@/assets/svg/sync.svg';
 import svgHourglasses from '@/assets/svg/hourglass.svg';
 import chevronDownIcon from '@/assets/svg/chevron-down.svg';
-import logo from '@/assets/svg/logo.svg';
+import logo from '@/assets/svg/uvp.png';
 
 import creatorIntro from '../creatorIntro';
 import notificationMenu from './notificationsDropdown';

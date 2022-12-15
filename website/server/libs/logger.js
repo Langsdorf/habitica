@@ -7,7 +7,7 @@ import {
   CustomError,
 } from './errors';
 
-const IS_PROD = nconf.get('IS_PROD');
+const IS_PROD = false;
 const IS_TEST = nconf.get('IS_TEST');
 const ENABLE_LOGS_IN_TEST = nconf.get('ENABLE_CONSOLE_LOGS_IN_TEST') === 'true';
 const ENABLE_CONSOLE_LOGS_IN_PROD = nconf.get('ENABLE_CONSOLE_LOGS_IN_PROD') === 'true';
