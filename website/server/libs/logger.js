@@ -8,18 +8,18 @@ import {
 } from './errors';
 
 const IS_PROD = false;
-const IS_TEST = nconf.get('IS_TEST');
-const ENABLE_LOGS_IN_TEST = nconf.get('ENABLE_CONSOLE_LOGS_IN_TEST') === 'true';
-const ENABLE_CONSOLE_LOGS_IN_PROD = nconf.get('ENABLE_CONSOLE_LOGS_IN_PROD') === 'true';
+const IS_TEST = false;
+const ENABLE_LOGS_IN_TEST = false;
+const ENABLE_CONSOLE_LOGS_IN_PROD = false;
 
-const LOGGLY_TOKEN = nconf.get('LOGGLY_TOKEN');
-const LOGGLY_SUBDOMAIN = nconf.get('LOGGLY_SUBDOMAIN');
+const LOGGLY_TOKEN = undefined;
+const LOGGLY_SUBDOMAIN = undefined;
 
 const logger = winston.createLogger();
 
 const _config = {
   logger,
-  loggingEnabled: true, // false if no transport has been configured
+  loggingEnabled: false, // false if no transport has been configured
 };
 
 export { _config as _loggerConfig }; // exported for use during tests
