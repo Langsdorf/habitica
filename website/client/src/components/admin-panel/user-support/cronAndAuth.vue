@@ -102,7 +102,7 @@
           You'll need to log out of the website and mobile app then log back in
           otherwise they won't work correctly.
           If you have trouble logging out, for the website go to
-          https://habitica.com/static/clear-browser-data and click the red button there,
+          https://rpg.auvp.com.br/static/clear-browser-data and click the red button there,
           and for the Android app, clear its data.
           For the iOS app, if you can't log out you might need to uninstall it,
           reboot your phone, then reinstall it.

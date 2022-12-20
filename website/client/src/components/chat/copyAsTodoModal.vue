@@ -52,7 +52,7 @@ import Task from '@/components/tasks/task';
 import taskDefaults from '@/../../common/script/libs/taskDefaults';
 import { TAVERN_ID } from '@/../../common/script/constants';
 
-const baseUrl = 'https://habitica.com';
+const baseUrl = 'https://rpg.auvp.com.br';
 
 export default {
   directives: {
